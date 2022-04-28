@@ -1,7 +1,6 @@
 /* The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 Find the sum of all the primes below two million. */
-const fs = require("fs");
-const { totalmem } = require("os");
+
 let actualPrime = 1;
 let actualMax = 1;
 const MAX = 2000000;
