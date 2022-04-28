@@ -33,7 +33,10 @@ function nextPrime() {
 function sumPrimesBelow(max) {
   let sum = 0;
   while (actualPrime < max) {
-    sum += nextPrime();
+    nextPrime();
+    if (actualPrime < max) {
+      sum += actualPrime;
+    }
   }
   return sum;
 }
